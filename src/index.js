@@ -35,7 +35,7 @@
       for(let i=0; i<bubbles.length; i++){
         (function (i) {
           setTimeout(function () {
-            bubbles[i].style.animation= 'moveToTop 6s ease-in-out -1.092s infinite';
+            bubbles[i].removeAttribute("style");
           }, 1000*i);
         })(i);
       
